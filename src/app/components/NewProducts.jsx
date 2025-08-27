@@ -75,6 +75,28 @@ const products = [
     hoverImage:
       "https://i.ibb.co.com/nhTLLyN/crispy-fruit-freen-orange-dried-fruit.jpg",
   },
+  {
+    id: 7,
+    title: "Crispy fruit freen orange dried fruit",
+    brand: "Bonzime",
+    price: 90,
+    rating: 5,
+    image:
+      "https://i.ibb.co.com/nhTLLyN/crispy-fruit-freen-orange-dried-fruit.jpg",
+    hoverImage:
+      "https://i.ibb.co.com/W4LR2Ypb/roasted-freeze-mix-blue-combo-dispenser.jpg",
+  },
+  {
+    id: 8,
+    title: "Green lemon fruit indoor & outdoor plant",
+    brand: "Essential vegan",
+    price: 45,
+    rating: 5,
+    image:
+      "https://i.ibb.co.com/CKgd7Kz2/organic-world-kashmiri-red-chilly-powder.jpg",
+    hoverImage:
+      "https://i.ibb.co.com/nhTLLyN/crispy-fruit-freen-orange-dried-fruit.jpg",
+  },
 ];
 
 export default function NewProducts() {
@@ -99,7 +121,7 @@ export default function NewProducts() {
       >
         {products.map((product) => (
           <SwiperSlide key={product.id}>
-            <div className="border rounded-lg p-4 shadow-sm hover:shadow-md transition bg-white">
+            <div className="inset-shadow-sm boarder-2 border-[#0000004d] rounded-lg p-4 shadow-sm hover:shadow-md transition bg-white">
               <span className="text-xs bg-gray-100 px-2 py-1 rounded">New</span>
 
               {/* Flip animation container */}

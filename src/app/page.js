@@ -2,6 +2,7 @@ import Banner2 from "./components/Banner2";
 import CategoriesSection from "./components/CategoriesSection";
 
 import Features from "./components/Features";
+import Footer from "./components/Footer";
 import NewProducts from "./components/NewProducts";
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
         <Features></Features>
         <CategoriesSection></CategoriesSection>
         <NewProducts></NewProducts>
+        <Footer></Footer>
       </main>
     </section>
   );
