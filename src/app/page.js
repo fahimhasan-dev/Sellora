@@ -1,15 +1,20 @@
-import Image from "next/image";
+import Banner2 from "./components/Banner2";
+import CategoriesSection from "./components/CategoriesSection";
 
+import Features from "./components/Features";
+import NewProducts from "./components/NewProducts";
 
 export default function Home() {
   return (
     <section>
       <header>
-        <nav>
-         
-        </nav>
+        <Banner2></Banner2>
       </header>
-      
-</section>
+      <main>
+        <Features></Features>
+        <CategoriesSection></CategoriesSection>
+        <NewProducts></NewProducts>
+      </main>
+    </section>
   );
 }
