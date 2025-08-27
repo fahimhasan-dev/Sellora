@@ -15,8 +15,10 @@ export default function Home() {
         <Features></Features>
         <CategoriesSection></CategoriesSection>
         <NewProducts></NewProducts>
-        <Footer></Footer>
       </main>
+      <footer>
+        <Footer></Footer>
+      </footer>
     </section>
   );
 }

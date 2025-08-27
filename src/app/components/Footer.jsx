@@ -14,7 +14,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-4 gap-8">
         {/* Brand Section */}
         <div>
-          <h2 className="text-2xl font-bold text-green-700">Sellora</h2>
+          <h2 className="text-2xl font-bold text-[#6c7fd8]">Sellora</h2>
           <p className="mt-4 text-sm text-gray-600">
             Your trusted online marketplace for fresh groceries, healthy
             products & more.
@@ -22,25 +22,25 @@ export default function Footer() {
           <div className="flex space-x-3 mt-4">
             <a
               href="#"
-              className="p-2 bg-white rounded-full shadow hover:bg-green-100"
+              className="p-2 bg-white rounded-full shadow hover:bg-[#6c7fd8]"
             >
               <FaFacebookF />
             </a>
             <a
               href="#"
-              className="p-2 bg-white rounded-full shadow hover:bg-green-100"
+              className="p-2 bg-white rounded-full shadow hover:bg-[#6c7fd8]"
             >
               <FaTwitter />
             </a>
             <a
               href="#"
-              className="p-2 bg-white rounded-full shadow hover:bg-green-100"
+              className="p-2 bg-white rounded-full shadow hover:bg-[#6c7fd8]"
             >
               <FaInstagram />
             </a>
             <a
               href="#"
-              className="p-2 bg-white rounded-full shadow hover:bg-green-100"
+              className="p-2 bg-white rounded-full shadow hover:bg-[#6c7fd8]"
             >
               <FaLinkedinIn />
             </a>
@@ -52,22 +52,22 @@ export default function Footer() {
           <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
           <ul className="space-y-2 text-sm">
             <li>
-              <a href="#" className="hover:text-green-700">
+              <a href="#" className="hover:text-[#6c7fd8]">
                 About Us
               </a>
             </li>
             <li>
-              <a href="#" className="hover:text-green-700">
+              <a href="#" className="hover:text-[#6c7fd8]">
                 Shop
               </a>
             </li>
             <li>
-              <a href="#" className="hover:text-green-700">
+              <a href="#" className="hover:text-[#6c7fd8]">
                 Contact
               </a>
             </li>
             <li>
-              <a href="#" className="hover:text-green-700">
+              <a href="#" className="hover:text-[#6c7fd8]">
                 FAQs
               </a>
             </li>
@@ -79,22 +79,22 @@ export default function Footer() {
           <h3 className="text-lg font-semibold mb-4">Customer Support</h3>
           <ul className="space-y-2 text-sm">
             <li>
-              <a href="#" className="hover:text-green-700">
+              <a href="#" className="hover:text-[#6c7fd8]">
                 Shipping Policy
               </a>
             </li>
             <li>
-              <a href="#" className="hover:text-green-700">
+              <a href="#" className="hover:text-[#6c7fd8]">
                 Return Policy
               </a>
             </li>
             <li>
-              <a href="#" className="hover:text-green-700">
+              <a href="#" className="hover:text-[#6c7fd8]">
                 Terms & Conditions
               </a>
             </li>
             <li>
-              <a href="#" className="hover:text-green-700">
+              <a href="#" className="hover:text-[#6c7fd8]">
                 Privacy Policy
               </a>
             </li>
@@ -115,7 +115,7 @@ export default function Footer() {
             />
             <button
               type="submit"
-              className="bg-green-700 text-white px-4 py-2 rounded-r-lg hover:bg-green-800"
+              className="bg-[#6c7fd8] text-white px-4 py-2 rounded-r-lg hover:bg-[#5b73dd]"
             >
               Subscribe
             </button>

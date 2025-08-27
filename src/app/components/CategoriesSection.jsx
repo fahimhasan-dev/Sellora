@@ -71,11 +71,11 @@ export default function CategoriesSection() {
   };
 
   return (
-    <section className="py-12">
-      <div className="w-[90%] mx-auto ">
+    <section className="py-12 bg-gray-100">
+      <div className="w-[90%]  mx-auto ">
         {/* Header */}
         <div className="text-center">
-          <p className="text-[#3b755f] font-medium">Latest collection</p>
+          <p className="text-[#6c7fd8] font-medium">Latest collection</p>
           <h2 className="text-3xl font-bold">Shop by category</h2>
         </div>
         <div className="flex items-center justify-end mb-8">

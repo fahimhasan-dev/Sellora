@@ -103,7 +103,7 @@ export default function NewProducts() {
   return (
     <section className="py-12 max-w-[90%] mx-auto">
       <div className="text-center mb-8">
-        <p className="text-green-600 font-medium">Trending item</p>
+        <p className="text-[#6c7fd8] font-medium">Trending item</p>
         <h2 className="text-3xl font-bold">New products</h2>
       </div>
 
@@ -158,8 +158,8 @@ export default function NewProducts() {
                 {"★".repeat(product.rating)}
                 {"☆".repeat(5 - product.rating)}
               </div>
-              <p className="text-green-600 font-bold">${product.price}.00</p>
-              <button className="w-full mt-3 bg-green-700 text-white py-2 rounded hover:bg-green-800">
+              <p className="text-[#6c7fd8] font-bold">${product.price}.00</p>
+              <button className="w-full mt-3 bg-[#6c7fd8] text-white py-2 rounded hover:bg-[#6b81e0]">
                 Add To Cart
               </button>
             </div>
