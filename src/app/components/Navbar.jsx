@@ -6,11 +6,14 @@ import { FaShoppingCart, FaUser, FaBars, FaTimes } from "react-icons/fa";
 
 import UserInfo from "./UserInfo";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export default function Navbar() {
+    const pathName = usePathname();
+ 
   const [isOpen, setIsOpen] = useState(false);
-
-  return (
+  if (!pathName.includes("dashboard")) {
+    return (
     <nav className="bg-white shadow-md fixed top-0 w-full z-50">
       <div className="max-w-[90%] mx-auto px-6 py-3 flex items-center justify-between">
         {/* Logo */}
@@ -43,10 +46,10 @@ export default function Navbar() {
             Products
           </a>
           <a
-            href="#"
+            href="/dashboard"
             className="text-gray-800 font-semibold hover:text-[#6c7fd8]"
           >
-            About
+            Dashboard
           </a>
           <a
             href="#"
@@ -106,4 +109,8 @@ export default function Navbar() {
       )}
     </nav>
   );
+  } else {
+    return <></>
+ }
+ 
 }
