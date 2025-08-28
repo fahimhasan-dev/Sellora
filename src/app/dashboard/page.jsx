@@ -3,17 +3,35 @@
 import { useState } from "react";
 import { FiHome, FiUser, FiSettings, FiMenu, FiX } from "react-icons/fi";
 import Link from "next/link";
+import { MdDashboard } from "react-icons/md";
+import { FaPlus } from "react-icons/fa";
+import { useSession } from "next-auth/react";
+import { useRouter } from "next/navigation";
 
 
 const sidebarItems = [
-  { name: "Dashboard", href: "/dashboard", icon: <FiHome /> },
-  { name: "Profile", href: "/dashboard/profile", icon: <FiUser /> },
-  { name: "Settings", href: "/dashboard/settings", icon: <FiSettings /> },
+  { name: "Home", href: "/", icon: <FiHome /> },
+  { name: "Dashboard", href: "/dashboard", icon: <MdDashboard /> },
+    {
+      name: "Add Product",
+      href: "/dashboard/addProduct",
+      icon: <FaPlus/>,
+    },
+  // { name: "Profile", href: "/dashboard/profile", icon: <FiUser /> },
+  // { name: "Settings", href: "/dashboard/settings", icon: <FiSettings /> },
 ];
 
 export default function DashboardLayout({ children }) {
 
   const [isOpen, setIsOpen] = useState(false);
+   const { data: session, status } = useSession();
+  const router = useRouter();
+
+  if (status === "loading") return <p>Loading...</p>;
+  if (!session) {
+    router.push("/login");
+    return null;
+  }
 
   return (
     <div className="flex min-h-screen bg-gray-50 ">
@@ -32,7 +50,8 @@ export default function DashboardLayout({ children }) {
         </div>
 
         {/* Sidebar links */}
-        <nav className="mt-6 space-y-2">
+       
+        <nav className="mt-15 space-y-2">
           {sidebarItems.map((item) => (
             <Link
               key={item.name}

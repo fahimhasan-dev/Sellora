@@ -1,21 +1,19 @@
-// src/lib/mongodb.js
 import mongoose from "mongoose";
-
-const MONGODB_URI = process.env.MONGODB_URI;
-
-if (!MONGODB_URI) {
-  throw new Error("⚠️ Please define MONGODB_URI inside .env.local");
-}
 
 let isConnected = false;
 
-export async function connectDB() {
+export const connectDB = async () => {
   if (isConnected) return;
+
   try {
-    await mongoose.connect(MONGODB_URI);
+    await mongoose.connect(process.env.MONGODB_URI, {
+      dbName: "dashboardDB",
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+    });
     isConnected = true;
     console.log("✅ MongoDB Connected");
-  } catch (error) {
-    console.error("❌ DB Connection Failed", error);
+  } catch (err) {
+    console.error("MongoDB connection error:", err);
   }
-}
+};
